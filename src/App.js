@@ -3,6 +3,7 @@ import HomePage from "./Component/Home/HomePage";
 import FinancePage from "./Component/Finance/FinancePage";
 import Calendar from "./Component/Calendar/Calendar";
 import LiftingPage from "./Component/Lifting/Lifting";
+import history from './history'
 
 import {Router, Route, Switch} from 'react-router-dom';
 
@@ -11,7 +12,7 @@ import './App.css';
 const App = () => {
     return (
         <div className='ui-container'>
-            <Router>
+            <Router history={history}>
                 <Switch>
                     <Route path='/' exact component={HomePage} />
                     <Route path='/finance' exact component={FinancePage} />
