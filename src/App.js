@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Component/Header';
 import HomePage from "./Component/Home/HomePage";
 import FinancePage from "./Component/Finance/FinancePage";
 import Calendar from "./Component/Calendar/Calendar";
@@ -12,6 +13,7 @@ import './App.css';
 const App = () => {
     return (
         <div className='ui-container'>
+            <Header />
             <Router history={history}>
                 <Switch>
                     <Route path='/' exact component={HomePage} />
