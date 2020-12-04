@@ -12,28 +12,21 @@ import './App.css';
 
 const App = () => {
     return (
-        <div className='ui-container'>
+        <React.Fragment>
             <Header />
-            <Router history={history}>
-                <Switch>
-                    <Route path='/' exact component={HomePage} />
-                    <Route path='/finance' exact component={FinancePage} />
-                    <Route path='/calendar' exact component={Calendar} />
-                    <Route path='/lifting' exact component={LiftingPage} />
-                </Switch>
-            </Router>
-        </div>
+            <div className='ui-container'>
+                <Router history={history}>
+                    <Switch>
+                        <Route path='/' exact component={HomePage} />
+                        <Route path='/finance' exact component={FinancePage} />
+                        <Route path='/calendar' exact component={Calendar} />
+                        <Route path='/lifting' exact component={LiftingPage} />
+                    </Switch>
+                </Router>
+            </div>
+        </React.Fragment>
     )
 };
-
-//
-// const App = () => {
-//     return (
-//         <div className="ui-container">
-//
-//         </div>
-//     );
-// };
 
 export default App;
 

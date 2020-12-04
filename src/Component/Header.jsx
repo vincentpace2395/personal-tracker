@@ -6,7 +6,10 @@ class Header extends React.Component {
     render() {
         return (
             <div className='header'>
-                Header
+                <button>Home</button>
+                <button>Finance</button>
+                <button>Calendar</button>
+                <button>Gym</button>
             </div>
         );
     };
