@@ -1,16 +1,18 @@
-.header {
+.header{
+    height: 59px;
+    width: 100%;
     position: fixed;
     background: blue;
     top: 0;
-    width: 100%;
-    text-align: center;
 }
 
-.header-wrapper {
+.header-content {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    background: blue;
+    text-align: center;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
 
 button {
