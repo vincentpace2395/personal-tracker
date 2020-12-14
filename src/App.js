@@ -5,6 +5,7 @@ import FinancePage from "./Component/Finance/FinancePage";
 import CalendarPage from "./Component/Calendar/CalendarPage";
 import LiftingPage from "./Component/Lifting/LiftingPage";
 import SportsPage from "./Component/Sports/SportsPage";
+import Fantasy from './Component/Sports/Fantasy';
 import history from './history'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
@@ -22,6 +23,7 @@ const App = () => {
                         <Route path='/calendar' exact component={CalendarPage} />
                         <Route path='/lifting' exact component={LiftingPage} />
                         <Route path='/sports' exact component={SportsPage} />
+                        <Route path='/sports/fantasy' exact component={Fantasy} />
                     </Switch>
                 </div>
             </Router>
